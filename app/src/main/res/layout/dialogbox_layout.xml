@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:padding="10dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rightLayout">
+
+    <!-- chat content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/iv_chatavatars_right"
+        android:background="@drawable/bubble_right"
+
+        android:maxLines="10"
+        android:maxEms="10"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/tv_user_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_chatcontent_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_chattime_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight = "true"
+            android:textSize="10sp"/>
+    </LinearLayout>
+    <!-- avatars -->
+    <ImageView
+        android:id="@+id/iv_chatavatars_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/image" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/leftLayout">
+    <ImageView
+        android:id="@+id/iv_chatavatars_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/image" />
+    <!-- chat content -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_chatavatars_left"
+        android:background="@drawable/bubble_left"
+
+        android:maxLines="10"
+        android:maxEms="10"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/tv_user_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_chatcontent_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_chattime_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A2_1155172339</string>
+    <string name="URL">http://47.254.253.138/api/a3/</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>
